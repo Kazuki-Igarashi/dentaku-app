@@ -1,0 +1,89 @@
+/* テーブルの装飾 */
+table {
+  /* 電卓のサイズ */
+  width: 300px;
+  height: 400px;
+  
+  /* 電卓が浮き出るように影を付ける */
+  border: solid 1px #dcdcdca4;
+  border-right: solid 4px #dcdcdca4;
+  border-bottom: solid 4px #dcdcdca4;
+  border-radius: 10px;
+  /* インライン要素を中央に配置 */
+  text-align: center;
+
+  /* 余白調整 */
+  padding: 8px;
+  margin: 20px;
+}
+
+input {
+  /* ボタンのサイズ */
+  width: 70px;
+  height: 70px;
+
+  /* ボタンの文字サイズ */
+  font-size: x-large;
+
+  /* ボタンの詳細設定 */
+  border: none;
+  border-radius: 20px;
+
+  /* 数字部分の背景色 */
+  background-color: #dcdcdca4;
+
+  /* click時の黒枠を消す */
+  outline: none;
+}
+
+/* ディスプレイの詳細設定 */
+.display {
+  width: 250px;
+  text-align: right;  /* 文字を右詰めに */
+  
+  /* 見た目の詳細設定 */
+  background: #fff;
+  border-top: solid 5px #dcdcdca4;
+  border-bottom: solid 5px #dcdcdca4;
+  border-left: solid 6px #b6b6b6;
+  border-right: solid 6px #b6b6b6;
+  border-radius: 5px;
+}
+
+/* 演算子の背景色を上書きで設定 */
+.operator {
+  background-color: #b6b6b6;
+}
+
+/* 記号＝の部分の背景色を上書きで設定 */
+.equal {
+  background-color: #b6b6b6;
+}
+
+/* カーソルを上に乗せた時に色を濃くする */
+input:hover{
+  background: #747373b9;
+}
+
+.display:hover {
+  background: #FFFFFF;
+}
+
+.operator:hover {
+  background: #339CDD;
+}
+
+/* click時に色を濃くする */
+
+input:active {
+  background: #5A5A5A;
+}
+
+.operator:active {
+  background: #2C80B4;
+}
+
+
+
+
+
