@@ -10,3 +10,14 @@ function Clear(){
   document.querySelector('#calc').value = afterDeleteText
 };
 
+// 入力されている文字を更新する
+function update(updatenum){
+  document.querySelector('#calc').value = updatenum;
+};
+
+// ×と÷を*と/の演算子に変換する
+function operatorConversion(calcAreaText){
+  let multipliedConv = calcAreaText.replaceAll( "×" , "*" );
+  let dividedConv = multipliedConv.replaceAll( "÷" , "/" );
+  return dividedConv;
+};
